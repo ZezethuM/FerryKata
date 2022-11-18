@@ -4,10 +4,12 @@ public class Car
 {
     public readonly string Color;
     public readonly int NumberOfPassengers;
-    public Car(string color, int passengers)
+    public readonly string NumberPlate;
+    public Car(string color, int passengers, string numberPlate)
     {
         Color = color;
-        NumberOfPassengers = passengers; 
+        NumberOfPassengers = passengers;
+        NumberPlate = numberPlate; 
     }
 
 
