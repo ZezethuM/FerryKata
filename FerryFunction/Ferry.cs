@@ -31,11 +31,11 @@ public class Ferry
                 if(item.NumberPlate == test.NumberPlate && item.Color == test.Color)
                 {
                     countTrips++;
-                    if(countTrips >= 3 && countTrips < 7)
+                    if(countTrips == 3)
                     {
                         helloToday = "Half price";
                     }
-                    else if(countTrips >= 7 && countTrips <= 9)
+                    else if(countTrips == 7)
                     {
                         helloToday = "You go free!";
                     }

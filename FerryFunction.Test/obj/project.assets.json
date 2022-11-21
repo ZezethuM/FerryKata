@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "coverlet.collector/3.1.0": {
+      "coverlet.collector/3.2.0": {
         "type": "package",
         "build": {
           "build/netstandard1.0/coverlet.collector.targets": {}
@@ -1684,13 +1684,14 @@
     }
   },
   "libraries": {
-    "coverlet.collector/3.1.0": {
-      "sha512": "YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
+    "coverlet.collector/3.2.0": {
+      "sha512": "xjY8xBigSeWIYs4I7DgUHqSNoGqnHi7Fv7/7RZD02rvZyG3hlsjnQKiVKVWKgr9kRKgmV+dEfu8KScvysiC0Wg==",
       "type": "package",
-      "path": "coverlet.collector/3.1.0",
+      "path": "coverlet.collector/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "build/netstandard1.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "build/netstandard1.0/Microsoft.CSharp.dll",
         "build/netstandard1.0/Microsoft.DotNet.PlatformAbstractions.dll",
         "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
@@ -1718,6 +1719,7 @@
         "build/netstandard1.0/System.Reflection.Emit.dll",
         "build/netstandard1.0/System.Reflection.Metadata.dll",
         "build/netstandard1.0/System.Reflection.TypeExtensions.dll",
+        "build/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "build/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
         "build/netstandard1.0/System.Text.RegularExpressions.dll",
         "build/netstandard1.0/System.Threading.Tasks.Extensions.dll",
@@ -1731,7 +1733,7 @@
         "build/netstandard1.0/coverlet.core.dll",
         "build/netstandard1.0/coverlet.core.pdb",
         "coverlet-icon.png",
-        "coverlet.collector.3.1.0.nupkg.sha512",
+        "coverlet.collector.3.2.0.nupkg.sha512",
         "coverlet.collector.nuspec"
       ]
     },
@@ -5983,7 +5985,7 @@
     "net6.0": [
       "FerryFunction >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
-      "coverlet.collector >= 3.1.0",
+      "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
@@ -6037,7 +6039,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.1.0, )"
+            "version": "[3.2.0, )"
           },
           "xunit": {
             "target": "Package",

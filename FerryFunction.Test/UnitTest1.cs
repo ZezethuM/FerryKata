@@ -31,11 +31,30 @@ public class UnitTest1
          myBoard.Board(new Car("pink", 1, "FD 584"));
         Assert.Equal("Rejected", myBoard.Board(new Car("yellow", 1, "QA 475")));  
     }
+       [Fact]
+    public void ItShouldReturnRejectedIfCarsCountAmdPeopleCountIsExceeded()
+    {
+        myBoard.Board(new Car("blue", 5, "QA 451"));
+        myBoard.Board(new Car("green", 2, "TA 555"));
+        myBoard.Board(new Car("lime", 1, "RA 455"));
+        myBoard.Board(new Car("orange", 3, "AM 522"));
+        myBoard.Board(new Car("lightblue", 1, "RA 412"));
+        myBoard.Board(new Car("skyblue", 5, "NA 147"));
+        myBoard.Board(new Car("red", 1, "C 5428"));
+        myBoard.Board(new Car("blue", 1, "L 215"));
+        myBoard.Board(new Car("pink", 1, "FD 584"));
+         myBoard.Board(new Car("pink", 1, "FD 584"));
+         myBoard.Board(new Car("pink", 1, "FD 584"));
+         myBoard.Board(new Car("pink", 1, "FD 584"));
+         myBoard.Board(new Car("pink", 1, "FD 584"));
+         myBoard.Board(new Car("pink", 1, "FD 584"));
+         myBoard.Board(new Car("pink", 1, "FD 584"));
+        Assert.Equal("Rejected", myBoard.Board(new Car("yellow", 1, "QA 475")));  
+    }
 
     [Fact]
     public void ItShouldReturnHalfPriceIfBoardedMoreThan3Times()
     {
-        myBoard.Board(new Car("pink", 2, "XA 555"));
         myBoard.Board(new Car("pink", 2, "XA 555"));
         myBoard.Board(new Car("pink", 2, "XA 555"));
         myBoard.Board(new Car("pink", 2, "QA 456"));
@@ -45,7 +64,6 @@ public class UnitTest1
        [Fact]
     public void ItShouldFreeToGoIfBoarded7Times()
     {
-        myBoard.Board(new Car("pink", 2, "XA 555"));
         myBoard.Board(new Car("pink", 2, "XA 555"));
         myBoard.Board(new Car("pink", 2, "XA 555"));
         myBoard.Board(new Car("pink", 2, "XA 555"));
@@ -151,4 +169,6 @@ public class UnitTest1
 
         Assert.Equal(myBoard.CarList, myBoard.listOfCars());   
     }
+
+
 }
